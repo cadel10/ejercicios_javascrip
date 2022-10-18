@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Compleja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadoracompleja.js"></script>
+</head>
+<body>
+    <div class="compleja">
+        <h1>Calculadora Compleja</h1>
+        <input type="text" name="pantalla" value="" id="pantalla">
+        <table>
+            <tr>
+                <td>
+                    <input type="button" name="siete" value="7" onclick="acumularoperacion(7)">
+                </td>
+                <td>
+                    <input type="button" name="ocho" value="8" onclick="acumularoperacion(8)">
+                </td>
+                <td>
+                    <input type="button" name="nueve" value="9" onclick="acumularoperacion(9)">
+                </td>
+                <td>
+                    <input type="button" name="multiplicar" value="*" onclick="acumularmultiplicacion()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="cuatro" value="4" onclick="acumularoperacion(4)">
+                </td>
+                <td>
+                    <input type="button" name="cinco" value="5" onclick="acumularoperacion(5)">
+                </td>
+                <td>
+                    <input type="button" name="seis" value="6" onclick="acumularoperacion(6)">
+                </td>
+                <td>
+                    <input type="button" name="restar" value="-" onclick="acumularresta()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="uno" value="1" onclick="acumularoperacion(1)">
+                </td>
+                <td>
+                    <input type="button" name="dos" value="2" onclick="acumularoperacion(2)">
+                </td>
+                <td>
+                    <input type="button" name="tres" value="3" onclick="acumularoperacion(3)">
+                </td>
+                <td>
+                    <input type="button" name="sumar" value="+" onclick="acumularsuma()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="dividir" value="/" onclick="acumulardivision()">
+                </td>
+                <td>
+                    <input type="button" name="cero" value="0" onclick="acumularoperacion(0)">
+                </td>
+                <td>
+                    <input type="button" name="borrar" value="C" onclick="borrar()">
+                </td>
+                <td>
+                    <input type="button" name="igual" value="=" onclick="resultado()">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    
+</body>
+</html>
